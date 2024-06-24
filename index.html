@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm App</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alarm App</h1>
+        
+        <div class="section">
+            <h2>Digital Clock</h2>
+            <div class="clock">
+                <div class="time">
+                    <span id="hour">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+                <div class="ampm">
+                    <span id="ampm">AM</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Timer</h2>
+            <div class="timer">
+                <input type="number" id="timerHours" placeholder="HH" min="0" max="23">
+                <input type="number" id="timerMinutes" placeholder="MM" min="0" max="59">
+                <input type="number" id="timerSeconds" placeholder="SS" min="0" max="59">
+                <div class="buttons">
+                    <button onclick="startTimer()">Start Timer</button>
+                    <button onclick="stopTimer()">Stop Timer</button>
+                    <button onclick="resetTimer()">Reset Timer</button>
+                </div>
+                <div id="timerDisplay" class="display">00:00:00</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Stopwatch</h2>
+            <div class="stopwatch">
+                <div id="stopwatchDisplay" class="display">00:00:00</div>
+                <div class="buttons">
+                    <button onclick="startStopwatch()">Start</button>
+                    <button onclick="stopStopwatch()">Stop</button>
+                    <button onclick="resetStopwatch()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
